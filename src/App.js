@@ -3,9 +3,10 @@ import './App.css';
 import Clock from './Clock/Clock';
 
 function App() {
+  const name = 'Ashwin';
   return (
     <div className="App">
-      <Clock />
+      <Clock name={name}/>
     </div>
   );
 }

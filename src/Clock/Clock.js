@@ -5,13 +5,17 @@ class Clock extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {date: new Date()};
+    const today = new Date();
+    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    this.state = {shitIWantToDisplay:  time};
     this.changeTime = this.changeTime.bind(this);
   }
 
   changeTime(){
+    const today = new Date();
+    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     this.setState({
-      date: new Date()
+      shitIWantToDisplay: time,
     });
   }
 
@@ -19,7 +23,7 @@ class Clock extends React.Component {
   render(){
   return (
     <div className="Clock" onClick={this.changeTime}>
-          current time is {this.state.date.toString()};
+         Hi {this.props.name} current time is {this.state.shitIWantToDisplay}
     </div>
   );
 }
