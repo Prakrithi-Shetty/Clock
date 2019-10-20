@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import Clock from './Clock/Clock';
+import InputDisplay from './InputDisplay/InputDisplay';
 
 function App() {
-  const name = 'Ashwin';
+  const namea = 'Ashwin';
   return (
     <div className="App">
-      <Clock name={name}/>
+      <Clock name={namea}/>
+      <InputDisplay />
     </div>
   );
 }
