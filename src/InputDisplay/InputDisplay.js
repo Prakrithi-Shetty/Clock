@@ -13,7 +13,7 @@ class InputDisplay extends React.Component {
     }
 
      enteredName(e){
-         console.log( this.myRef.current.value);
+         console.log(this.myRef.current.value);
          const newName = this.myRef.current.value;
          this.setState({
             name:newName,
